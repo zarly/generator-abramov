@@ -1,4 +1,4 @@
-# generator-abramov [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-abramov [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > JS projects generator by Alexander Abramov
 
 ## Installation
@@ -25,7 +25,7 @@ yo abramov
 
 ## License
 
-MIT © [Alexander Abramov](alex-abramov.com)
+MIT © [Alexander Abramov](https://alex-abramov.com)
 
 
 [npm-image]: https://badge.fury.io/js/generator-abramov.svg
