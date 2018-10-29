@@ -31,8 +31,4 @@ module.exports = class extends Generator {
       this.destinationPath('dummyfile.txt')
     );
   }
-
-  install() {
-    this.installDependencies();
-  }
 };

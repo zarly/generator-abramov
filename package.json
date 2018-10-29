@@ -2,11 +2,11 @@
   "name": "generator-abramov",
   "version": "0.0.0",
   "description": "JS projects generator by Alexander Abramov",
-  "homepage": "",
+  "homepage": "https://github.com/zarly/generator-abramov",
   "author": {
     "name": "Alexander Abramov",
     "email": "abramov231@gmail.com",
-    "url": "alex-abramov.com"
+    "url": "http://alex-abramov.com"
   },
   "files": [
     "generators"
