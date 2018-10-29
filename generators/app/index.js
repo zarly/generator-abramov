@@ -1,4 +1,6 @@
 'use strict';
+
+const _ = require('lodash');
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
@@ -14,10 +16,9 @@ module.exports = class extends Generator {
 
 		const prompts = [
 			{
-				type: 'confirm',
-				name: 'someAnswer',
-				message: 'Would you like to enable this option?',
-				default: true
+				type: 'input',
+				name: 'name',
+				message: 'Имя проекта:'
 			}
 		];
 
@@ -26,7 +27,7 @@ module.exports = class extends Generator {
 			this.props = props;
 		});
 	}
-	
+
 	async writing() {
 		const files = [
 			'.editorconfig',
@@ -35,6 +36,21 @@ module.exports = class extends Generator {
 		];
 		files.forEach(fileName => {
 			this.fs.copy(this.templatePath(fileName), this.destinationPath(fileName));
+		});
+
+		const {name} = this.props;
+		const templates = [
+			'package.json.tmp',
+		];
+		const params = {
+			nameCamelCase: _.camelCase(name),
+			nameKebabCase: _.kebabCase(name),
+			nameSneakCase: _.snakeCase(name),
+			nameOriginal: name
+		};
+		templates.forEach(input => {
+			const output = input.replace(/\.tmp$/, '');
+			this.fs.copyTpl(this.templatePath(input), this.destinationPath(output), params);
 		});
 	}
 };

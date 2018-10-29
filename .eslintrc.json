@@ -1,6 +1,5 @@
 {
   "extends": [
-    "xo",
     "prettier"
   ],
   "parserOptions": {

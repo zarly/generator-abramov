@@ -1,0 +1,13 @@
+{
+  "name": "<%= nameSneakCase %>",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Alexander Abramov",
+  "engines": {
+    "npm": ">= 8.0.0"
+  },
+  "scripts": {
+    "test": "true"
+  },
+  "license": "MIT"
+}
