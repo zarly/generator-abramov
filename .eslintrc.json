@@ -1,7 +1,4 @@
 {
-  "extends": [
-    "prettier"
-  ],
   "parserOptions": {
     "ecmaVersion": 2017
   },
@@ -11,16 +8,6 @@
     "es6": true
   },
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "printWidth": 90,
-        "allowIndentationTabs": true
-      }
-    ]
-  },
-  "plugins": [
-    "prettier"
-  ]
+    "indent": ["error", "tab"]
+  }
 }
