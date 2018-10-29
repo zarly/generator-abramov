@@ -1,7 +1,7 @@
 {
-  "name": "<%= nameSneakCase %>",
+  "name": "<%= nameKebabCase %>",
   "version": "0.0.1",
-  "description": "",
+  "description": "<%= nameOriginal %>",
   "author": "Alexander Abramov",
   "engines": {
     "npm": ">= 8.0.0"
