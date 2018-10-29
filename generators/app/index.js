@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 
 module.exports = class extends Generator {
-	prompting() {
+	async prompting() {
 		// Have Yeoman greet the user.
 		this.log(
 			yosay(
@@ -27,7 +27,7 @@ module.exports = class extends Generator {
 		});
 	}
 	
-	writing() {
+	async writing() {
 		const files = [
 			'.editorconfig',
 			'.gitignore',
