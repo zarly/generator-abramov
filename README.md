@@ -1,4 +1,4 @@
-# generator-abramov [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-abramov [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > JS projects generator by Alexander Abramov
 
 ## Installation
