@@ -26,6 +26,8 @@ module.exports = class extends Generator {
 			nameCamelCase: _.camelCase(name),
 			nameKebabCase: _.kebabCase(name),
 			nameSneakCase: _.snakeCase(name),
+			nameClassCase: _.upperFirst(_.camelCase(name)),
+			nameConstCase: _.upperCase(_.snakeCase(name)),
 			nameOriginal: name
 		};
 
