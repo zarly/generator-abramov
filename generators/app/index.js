@@ -26,11 +26,12 @@ module.exports = class extends Generator {
 			this.props = props;
 		});
 	}
-
+	
 	writing() {
 		const files = [
 			'.editorconfig',
 			'.gitignore',
+			'.eslintrc.json',
 		];
 		files.forEach(fileName => {
 			this.fs.copy(this.templatePath(fileName), this.destinationPath(fileName));

@@ -11,6 +11,8 @@ describe('generator-abramov:app', () => {
 	});
 
 	it('creates files', () => {
-		assert.file(['dummyfile.txt']);
+		assert.file(['.editorconfig']);
+		assert.file(['.eslintrs.json']);
+		assert.file(['.gitignore']);
 	});
 });
